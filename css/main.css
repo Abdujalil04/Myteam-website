@@ -1,0 +1,198 @@
+/* FONTS */
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-Medium.woff2') format('woff2'),
+        url('Livvic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-SemiBold.woff2') format('woff2'),
+        url('Livvic-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../fonts/Livvic-Bold.woff2') format('woff2'),
+        url('Livvic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* CUSTOM PROOPS */
+:root {
+    --site-font: "Livvic", "Arial", sans-serif ;
+    --white-color:#fff;
+    --red-color:#F67E7E;
+    --site-bg-color: #004047;
+    --site-grey-color:#012F34;
+}
+/* GLOBAL STYLES */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+    scroll-behavior:smooth ;
+    font-size: 62.5%;
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--site-font);
+    font-weight:600 ;
+    font-size: 1.8rem; 
+    line-height:28px ;
+    color: var(--blac-text-color);
+    background-color: var(--site-bg-color)
+    
+}
+.container {
+    width: 100%;
+    max-width:1440px ;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* HEADER STYLES */
+.site-header {
+    position: relative;
+}
+.site-header__container {
+}
+.site-header__nav {
+    max-width: 1110px;
+    height: 48px;
+    margin-top: 7.3rem;
+    margin-left: 16.5rem;
+    margin-right: 16.5rem;
+    display: flex;
+    align-items: center;
+}
+.site-header__nav-logo img {
+    margin: 0.4rem 0;
+}
+.site-header__nav-logo img:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+.site-link {
+    margin: 1rem 0;
+    text-decoration: none;
+    color: var(--white-color);
+}
+.site-link:hover {
+    opacity: 0.5;
+    transform: scale(1.2);
+    transform: rotate(15px);
+}
+.site-header__nav-link {
+    margin: 10px 0;
+}
+.link-home {
+    margin-left: 8rem;
+}
+.link-about {
+    margin-left: 4rem;
+    margin-right: auto;         
+}
+.site-header__nav-link-btn {
+    text-decoration: none;
+    color: var(--white-color);
+    border: 2px solid #fff;
+    padding: 1rem 3.2rem;
+    border-radius: 24px;
+    
+}
+.site-header__nav-link-btn:hover  {
+    background-color: var(--white-color);
+    color: var(--site-bg-color);
+}
+.site-header__nav-link-btn:active {
+    opacity: 0.6;
+}
+.site-header__wrapper {
+    display: flex;
+    max-width: 1110px;
+    height: 200px;
+    margin-top: 13.9rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.site-header__img {
+    position: absolute;
+    top: 256px;
+    left: -100px;
+}
+.site-header__title {
+    width: 635px;
+    height: 200px;
+    font-weight: 700;
+    font-size: 10rem;
+    line-height: 100px;
+}
+.site-header__title span {
+    color: var(--red-color);
+}
+.site-header__hr {
+    width: 50px;
+    height: 4px;
+}
+.site-header__text {
+    width: 445px;
+    height: 112px;
+    margin-top: 7.9rem;
+}
+.site-header__btn {
+    background-image: url(../images/svg/right-icon.svg);
+    margin-left: 917px;
+    margin-top:155px;
+    bottom: -100px;
+}
+/* MAIN STYLES */
+
+.site-main {
+    
+}
+.site-main__wrapper {
+    background-color: var(--site-grey-color);
+}
+.site-main__container {
+   
+}
+.site-main-section-wrapper {
+}
+.site-main__section {
+}
+.site-main__hr {
+}
+.site-main__section-title {
+}
+.site-main__section-iteam {
+}
+.site-main__section-item-list {
+}
+.site-main__section-item-wrapper-img {
+}
+.site-main__section-item-wrapper-title {
+}
+.site-main__section-item-wrapper-text {
+}
+.site-main__section-btn {
+}
